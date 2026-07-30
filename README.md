@@ -3,7 +3,7 @@
 # Table of content 
 
 * [Description](#description)
-* [Business Introduction](#business Introduction)
+* [Business Introduction](#business-introduction)
 * [Problem/Overview](#problem/Overview)
 * [Procedure](#procedure)
 * [Insights](#insights)
