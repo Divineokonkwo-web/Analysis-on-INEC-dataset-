@@ -39,4 +39,32 @@ lowest average turnout (96.86%). This raises the question: which anomalies
 represent genuine irregularities that require audit, versus normal 
 statistical variation?
 
+## Insights
+
+- **Turnout is high but uneven across zones.** National average is 98.03%. 
+  South-South has the highest turnout (98.83%), while South-West has the 
+  lowest (96.86%).
+- **Anomalies are rare but targeted.** Only 1.2% of polling units show 
+  anomalies, but South-West accounts for half of them (6 of 12).
+- **Party A leads in every zone** without exception, followed consistently 
+  by Party B. Party C trails with under 5% of votes in every zone.
+- **A turnout-vs-registration gap exists nationally** — 17,135 votes 
+  (1.83%) fewer than registered voters, with South-West showing the 
+  largest absolute gap (5,076).
+- **South-West is a pattern hotspot** — lowest turnout, highest anomaly 
+  count, and largest registration gap all converge in this zone.
+
+## Recommendation
+
+- Audit the 2 Over Voting polling units in North-West and South-South 
+  immediately — this is a direct data integrity violation.
+- Investigate the 8 Perfect Turnout polling units for possible result 
+  manipulation or recording errors before results are finalized.
+- Apply an automatic turnout threshold flag (above 95%) in future 
+  pipelines for secondary verification.
+- Prioritize South-West for deeper investigation given its combination 
+  of low turnout and high anomaly count.
+- Expand the dataset to include North-East and South-East zones for a 
+  complete six-zone national comparison.
+
 
