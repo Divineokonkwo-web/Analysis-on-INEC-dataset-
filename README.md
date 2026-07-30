@@ -39,6 +39,43 @@ lowest average turnout (96.86%). This raises the question: which anomalies
 represent genuine irregularities that require audit, versus normal 
 statistical variation?
 
+## Procedure
+
+1. **Data Collection**  
+   Sourced the INEC Election Dataset containing polling unit-level records 
+   for 1,000 units across four geopolitical zones (North-Central, 
+   North-West, South-South, South-West), including registered voters, 
+   votes cast, and party vote totals.
+
+2. **Data Cleaning**  
+   Checked for missing values, duplicate entries, and inconsistent 
+   formatting across zone and state fields. Standardized column names 
+   and verified that vote totals per polling unit matched the sum of 
+   individual party votes.
+
+3. **Turnout Calculation**  
+   Calculated voter turnout percentage per polling unit as:  
+   `(Total Votes Cast / Registered Voters) × 100`  
+   Aggregated this by zone and state to identify turnout trends.
+
+4. **Anomaly Detection**  
+   Flagged polling units based on defined thresholds:
+   - **Over Voting** — votes cast exceed registered voters
+   - **Perfect Turnout** — turnout at or near 100%
+   - **Suspicious Low** — turnout unusually below zone average
+   - **Zero Turnout** — no votes recorded despite registered voters
+
+5. **Party Performance Analysis**  
+   Aggregated vote totals by party within each zone to determine 
+   leading and trailing parties, and compared performance gaps 
+   between Party A, B, and C.
+
+6. **Visualization & Reporting**  
+   Built summary tables and charts to visualize turnout by zone, 
+   anomaly distribution, and party performance, then compiled 
+   findings into the Insights and Recommendation sections.
+
+
 ## Insights
 
 - **Turnout is high but uneven across zones.** National average is 98.03%. 
