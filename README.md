@@ -27,3 +27,16 @@ critical to maintaining public trust in electoral outcomes. This analysis
 was carried out as part of the NTTS Internship, Team Gurus | Data Analysis, 
 using a dataset of 1,000 polling units collected in June 2026.
 
+## Problem/Overview
+
+While overall voter turnout across the dataset is high (98.03% nationally), 
+this figure alone can mask underlying data integrity issues. Out of 1,000 
+polling units, 12 (1.2%) recorded anomalies — including 2 cases of Over 
+Voting (votes exceeding registered voters), 8 cases of Perfect Turnout, 
+1 Suspicious Low turnout, and 1 Zero Turnout. South-West carries the 
+highest anomaly burden with 6 flagged units, despite also recording the 
+lowest average turnout (96.86%). This raises the question: which anomalies 
+represent genuine irregularities that require audit, versus normal 
+statistical variation?
+
+
